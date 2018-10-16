@@ -34,12 +34,11 @@ end
 
 def apply_clearance(cart)
   cart.each do |name, info|
-  binding.pry
-    # if cart[name][:clearance] == "true"
-    #   binding.pry
-    #   cart[name][:price] *= 0.8
+    if cart[name][:clearance] == "true"
+      binding.pry
+      cart[name][:price] *= 0.8
       
-    # end
+    end
   end
   cart
 end
