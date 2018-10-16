@@ -11,7 +11,7 @@ def consolidate_cart(cart)
         end
       else 
         cart_hash[name] = info
-        cart_hash[name] = {:count => 1}
+        cart_hash[name] = {info, :count => 1}
       end
     end
   end
