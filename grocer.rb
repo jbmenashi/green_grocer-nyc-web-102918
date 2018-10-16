@@ -7,7 +7,7 @@ def consolidate_cart(cart)
       if cart_hash.key?(name)
         if cart_hash[name].key?(count)
           cart_hash[name][count] += 1
-        else cart_hash[name][count] = 1
+        else cart_hash[name]= {count] = 1
         end
       else cart_hash[name] = info
       end
