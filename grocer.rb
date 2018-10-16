@@ -16,7 +16,14 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-    binding.pry
+    cart.each do |name, details|
+      coupons.each do |coupon_name, coupon_details|
+        if name == coupon_name
+          cart["#{name} W/COUPON"] = coupon_details
+          binding.pry
+        end
+      end
+    end
 end
 
 def apply_clearance(cart)
