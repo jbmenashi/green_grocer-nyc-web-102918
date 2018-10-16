@@ -23,6 +23,7 @@ def apply_coupons(cart, coupons)
       coupons.each do |coupon|
         if name == coupon[:item]
           cart[name + "W/COUPON"][:clearance] = cart[name][:clearance]
+          cart[name + "W/COUPON"][:price] = coupon[:cost]
           binding.pry
         end
       end
