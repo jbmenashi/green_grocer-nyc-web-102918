@@ -4,8 +4,10 @@ def consolidate_cart(cart)
   cart_hash = {}
   cart.each do |item_hash|
     item_hash.each do |name, info|
-      if cart_hash[name]
+      if cart_hash.key?(name)
         
+      else cart_hash[name] = info
+      end
     end
   end
 end
