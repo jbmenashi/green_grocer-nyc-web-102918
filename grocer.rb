@@ -13,6 +13,7 @@ def consolidate_cart(cart)
       end
     end
   end
+  binding.pry
   cart_hash
 end
 
