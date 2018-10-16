@@ -33,7 +33,7 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  cart.each do |name, info|\
+  cart.each do |name, info|
   binding.pry
     # if cart[name][:clearance] == "true"
     #   binding.pry
