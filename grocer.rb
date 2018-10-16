@@ -20,6 +20,7 @@ def apply_coupons(cart, coupons)
       coupons.each do |coupon|
         if name == coupon[:item]
           cart["#{name} W/COUPON"] = "beans"
+          binding.pry
         end
       end
     end
