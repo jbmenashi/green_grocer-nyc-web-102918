@@ -10,7 +10,7 @@ def consolidate_cart(cart)
         else cart_hash[name]= {count => 1}
         end
       else 
-        cart_hash[name] = {:count => 1}
+        cart_hash[name] = info
       end
     end
   end
