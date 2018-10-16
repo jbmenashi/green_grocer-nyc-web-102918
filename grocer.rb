@@ -4,6 +4,7 @@ def consolidate_cart(cart)
   cart_hash = {}
   cart.each do |item_hash|
     item_hash.each do |name, info|
+      binding.pry
       if cart_hash.key?(name)
         if cart_hash[name].key?(count)
           cart_hash[name][count] += 1
