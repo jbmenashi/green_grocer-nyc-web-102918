@@ -19,8 +19,9 @@ def apply_coupons(cart, coupons)
     cart.each do |name, details|
       coupons.each do |coupon_name, coupon_details|
         if name == coupon_name
-          cart["#{name} W/COUPON"] = coupon_details
           binding.pry
+          cart["#{name} W/COUPON"] = coupon_details
+          
         end
       end
     end
