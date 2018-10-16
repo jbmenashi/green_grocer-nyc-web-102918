@@ -9,7 +9,9 @@ def consolidate_cart(cart)
           cart_hash[name][count] += 1
         else cart_hash[name]= {count => 1}
         end
-      else cart_hash[name] = info
+      else 
+        cart_hash[name] = info
+        cart_hash[name] = {count => 1}
       end
     end
   end
