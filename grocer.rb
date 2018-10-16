@@ -34,10 +34,11 @@ end
 
 def apply_clearance(cart)
   cart.each do |item_hash|
-    item_hash.each do |name, details|
-      if item_hash[name][:clearance] == "true"
-        binding.pry
-        item_hash[name][:price] *= 0.8
+    item_hash.each do |name, info|
+      binding.pry
+      # if item_hash[name][:clearance] == "true"
+      #   binding.pry
+      #   item_hash[name][:price] *= 0.8
       end
     end
   end
