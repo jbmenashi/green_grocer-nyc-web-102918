@@ -33,7 +33,14 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  # code here
+  cart.each do |item_hash|
+    item_hash.each do |name, details|
+      if item_hash[name][:clearance] == true
+        item_hash[name][:price] *= .8
+      end
+    end
+  end
+  cart
 end
 
 def checkout(cart, coupons)
